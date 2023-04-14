@@ -6,9 +6,8 @@ Library           RPA.Browser.Selenium    ${auto_close}=${False}
 
 *** Keywords ***
 Launch Browser
-
-[Arguments]
-    ${url}    ${searchWord}
+    [Arguments]    ${url}    ${searchWord}
+    Open Available Browser    ${url}
 
 *** Keywords ***
 Get screenshot
